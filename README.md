@@ -21,14 +21,14 @@ O programa deve permitir aos engenheiros da NASA enviar comandos para o Robô e 
 
 ## Cenários de teste
 
-* curl -s --request POST http://localhost:8080/rest/mars/MMRMMRMM ..
+* curl -s --request POST http://localhost:8080/rest/mars/MMRMMRMM        
 Saída esperada: (2, 0, S)
 
-* Entrada: curl -s --request POST http://localhost:8080/rest/mars/MML ..
+* Entrada: curl -s --request POST http://localhost:8080/rest/mars/MML   
 Saída esperada: (0, 2, W)
 
-* curl -s --request POST http://localhost:8080/rest/mars/AAA ..
+* curl -s --request POST http://localhost:8080/rest/mars/AAA   
 Saída esperada: 400 Bad Request
 
-* curl -s --request POST http://localhost:8080/rest/mars/MMMMMMMMMMMMMMMMMMMMMMMM ..
+* curl -s --request POST http://localhost:8080/rest/mars/MMMMMMMMMMMMMMMMMMMMMMMM   
 Saída esperada: 400 Bad Request
